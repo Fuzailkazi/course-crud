@@ -34,14 +34,14 @@ const purchaseSchema = new Schema({
 });
 
 // .model() is used to create a new collection
-const userModal = mongoose.model('user', userSchema);
-const adminModal = mongoose.model('admin', userSchema);
-const courseModal = mongoose.model('course', userSchema);
-const purchaseModal = mongoose.model('purchase', userSchema);
+const userModel = mongoose.model('user', userSchema);
+const adminModel = mongoose.model('admin', adminSchema);
+const courseModel = mongoose.model('course', courseSchema);
+const purchaseModel = mongoose.model('purchase', purchaseSchema);
 
 module.exports = {
-  userModal,
-  adminModal,
-  courseModal,
-  purchaseModal,
+  userModel,
+  adminModel,
+  courseModel,
+  purchaseModel,
 };
