@@ -49,6 +49,10 @@ adminRouter.post('/signin', async function (req, res) {
 });
 
 adminRouter.post('/course', function (req, res) {
+  const adminId = req.userId;
+
+  const {title, description, }
+
   res.json({
     message: 'signup endpoint',
   });
