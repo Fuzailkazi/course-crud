@@ -2,7 +2,7 @@ const { Router } = require('express');
 const adminRouter = Router();
 const { adminModel } = require('../db');
 const jwt = require('jsonwebtoken');
-const JWT_ADMIN_PASSWORD = 'qwerpoiu';
+const { JWT_ADMIN_PASSWORD } = require('../config');
 
 adminRouter.post('/signup', async function (req, res) {
   const { email, password, firstName, lastName } = req.body;
